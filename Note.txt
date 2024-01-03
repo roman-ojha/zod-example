@@ -1,0 +1,11 @@
+-> Data Source from where data can come: './01_Source_of_Data.png'
+    1. From You Backend API Request
+        -> './src/components/product/Product.tsx'
+    2. From Third Party API Request
+    3. Form Data
+    4. LocalStorage
+    5. URL
+-> And the data that we are getting from These api may not be in the shape that we wanted and typescript alone will not going to protect us.
+-> For that we can use Zod: https://zod.dev for validating the data and it's shape that is coming from the api
+-> OR may we want to validate the shape of the data that is coming to the application before processing it. it could be any source from where data could come
+-> NOTE: that typescript alone will not be enough to validate the data, because all of these data come on run time on frontend
