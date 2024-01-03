@@ -1,10 +1,29 @@
--> Data Source from where data can come: './01_Source_of_Data.png'
-    1. From You Backend API Request
-        -> './src/components/product/Product.tsx'
-    2. From Third Party API Request
-    3. Form Data
-    4. LocalStorage
-    5. URL
+-> Data Source from where data can come and we can use Zod for that: './01_Source_of_Data.png'
+    *) In Frontend
+        1. From You Backend API Request
+            -> './src/components/product/Product.tsx'
+        2. From Third Party API Request
+        3. Form Data
+            -> './src/components/checkout-form.tsx'
+        4. LocalStorage
+            -> './src/components/Cart.tsx'
+        5. URL
+    *) Data on Backend: './02_Data_on_backend.png'
+        1. In NextJS:
+            1. API Route Handlers
+            2. Server Actions
+            3. Server Components
+                -> URL: './src/components/ServerComProduct.tsx'
+        2. from Third-Party API on backend
+        3. from Webhooks
+        4. Environment Variables
+            -> './src/lib/env.ts'
+        5. Loading data from a file system
+            -> './src/app/api/product/route.ts'
+        6. URL
+        7. from Database or in Database case we have ORM as well
+            -> Convert prisma schema to zod schema: https://www.npmjs.com/package/zod-prisma-types
+
 -> And the data that we are getting from These api may not be in the shape that we wanted and typescript alone will not going to protect us.
 -> For that we can use Zod: https://zod.dev for validating the data and it's shape that is coming from the api
 -> OR may we want to validate the shape of the data that is coming to the application before processing it. it could be any source from where data could come
